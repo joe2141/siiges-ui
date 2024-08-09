@@ -72,7 +72,7 @@ export default function Notificaciones() {
   return (
     <Layout title="Notificaciones">
       <Divider sx={{ mt: 2 }} />
-      <DataTable title="Notificaciones" rows={rows} columns={rol === 'admin' ? adminColumns : commonColumns} />
+      <DataTable rows={rows} columns={rol === 'admin' ? adminColumns : commonColumns} />
     </Layout>
   );
 }

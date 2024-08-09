@@ -5,23 +5,25 @@ import ButtonUnstyled from '@mui/base/ButtonUnstyled';
 
 import '../../styles/buttons/ButtonAdd.css';
 
+
 export default function UserForm({ confirm, cancel, confirmDisabled }) {
   return (
     <Grid container justifyContent="flex-end" spacing={2}>
       <Grid item>
         <ButtonUnstyled className="buttonAdd cancel" onClick={cancel}>
-          <Typography variant="body1">Cancelar</Typography>
+          <Typography variant="body1">Cerrar</Typography>
         </ButtonUnstyled>
       </Grid>
-      <Grid item>
-        <ButtonUnstyled
-          className="buttonAdd guardar"
-          disabled={confirmDisabled}
-          onClick={confirm}
-        >
-          <Typography variant="body1">Guardar</Typography>
-        </ButtonUnstyled>
-      </Grid>
+      {!confirmDisabled && (
+        <Grid item>
+          <ButtonUnstyled
+            className="buttonAdd guardar"
+            onClick={confirm}
+          >
+            <Typography variant="body1">Confirmar</Typography>
+          </ButtonUnstyled>
+        </Grid>
+      )}
     </Grid>
   );
 }
@@ -29,6 +31,5 @@ export default function UserForm({ confirm, cancel, confirmDisabled }) {
 UserForm.propTypes = {
   confirm: PropTypes.func.isRequired,
   cancel: PropTypes.func.isRequired,
-  // eslint-disable-next-line react/require-default-props
   confirmDisabled: PropTypes.bool,
 };

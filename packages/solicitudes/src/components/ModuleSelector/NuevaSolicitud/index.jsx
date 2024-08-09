@@ -96,7 +96,7 @@ function NewRequest() {
         </Grid>
         <Grid item xs={2} sx={{ mt: 2, mb: 1 }}>
           <div style={{ height: '100%' }}>
-            <ButtonStyled onclick={submit} text="Crear" alt="Nueva Solicitud" />
+            <ButtonStyled onclick={submit} text="Crear" alt="Crear" />
           </div>
         </Grid>
       </Grid>

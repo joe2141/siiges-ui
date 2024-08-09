@@ -82,12 +82,12 @@ export default function MenuNavbar() {
           </MenuItem>
         </Link>
         <Divider />
-        <MenuItem>
+        {/* <MenuItem>
           <ListItemIcon>
             <Settings fontSize="small" />
           </ListItemIcon>
           Ajustes
-        </MenuItem>
+        </MenuItem> */}
         <Link href="/notificaciones">
           <MenuItem>
             <ListItemIcon>
