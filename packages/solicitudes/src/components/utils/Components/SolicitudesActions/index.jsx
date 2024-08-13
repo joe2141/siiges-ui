@@ -97,11 +97,11 @@ function SolicitudesActions({ id, estatus }) {
         )}
       </Grid>
       <DefaultModal title="Eliminar solicitud" open={open} setOpen={setOpen}>
-        <Typography>
-          ¿Está seguro que quiere eliminar esta solicitud?
-        </Typography>
-        <ButtonsForm cancel={() => setOpen(false)} confirm={handleDelete} />
-      </DefaultModal>
+  <Typography>
+    ¿Está seguro que quiere eliminar esta solicitud?
+  </Typography>
+  <ButtonsForm cancel={() => setOpen(false)} confirm={handleDelete} confirmText="Confirmar"/>
+</DefaultModal>
     </>
   );
 }
