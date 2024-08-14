@@ -2,9 +2,7 @@ import { Grid, Typography } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import PropTypes from 'prop-types';
 import { Button } from '@siiges-ui/shared';
-import React, {
-  useContext, useState, useEffect, useMemo,
-} from 'react';
+import React, { useContext, useState, useEffect, useMemo } from 'react';
 import columns from './Mocks/AsignaturasFormacionElectiva';
 import { TablesPlanEstudiosContext } from '../utils/Context/tablesPlanEstudiosProviderContext';
 import AsignaturasFormacionCreateModal from '../utils/Components/AsignaturasFormacionModales/AsignaturasFormacionCreateModal';
@@ -27,13 +25,14 @@ export default function AsignaturasFormacionElectiva({ disabled, type }) {
 
   const isDisabled = disabled || isSectionDisabled;
 
-  const { asignaturasFormacion, asignaturasTotal, loading } = type === 'editar'
-    ? useAsignaturas(programaId)
-    : { asignaturasFormacion: [], loading: false };
+  const { asignaturasFormacion, asignaturasTotal, loading } =
+    type === 'editar'
+      ? useAsignaturas(programaId)
+      : { asignaturasFormacion: [], loading: false };
 
   const tableColumns = useMemo(
     () => columns(setAsignaturasFormacionList, asignaturasFormacionList),
-    [setAsignaturasFormacionList, asignaturasFormacion],
+    [setAsignaturasFormacionList, asignaturasFormacion]
   );
 
   useEffect(() => {
