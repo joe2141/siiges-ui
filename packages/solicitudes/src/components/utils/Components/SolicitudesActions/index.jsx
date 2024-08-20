@@ -106,6 +106,7 @@ function SolicitudesActions({ id, estatus }) {
         )}
       </Grid>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <DefaultModal title="Eliminar solicitud" open={openDelete} setOpen={setOpenDelete}>
         <Typography>
           ¿Está seguro que quiere eliminar esta solicitud?
@@ -129,13 +130,18 @@ function SolicitudesActions({ id, estatus }) {
         <ButtonsForm cancel={() => setOpenDownload(false)} confirm={handleDownload} />
       </DefaultModal>
 =======
+=======
+>>>>>>> 12aadf36ee04c5b43ffb5080397456440b095ed6
       <DefaultModal title="Eliminar solicitud" open={open} setOpen={setOpen}>
   <Typography>
     ¿Está seguro que quiere eliminar esta solicitud?
   </Typography>
   <ButtonsForm cancel={() => setOpen(false)} confirm={handleDelete} confirmText="Confirmar"/>
 </DefaultModal>
+<<<<<<< HEAD
 >>>>>>> fcbda9d (se areglo boton obsevaciones)
+=======
+>>>>>>> 12aadf36ee04c5b43ffb5080397456440b095ed6
     </>
   );
 }
