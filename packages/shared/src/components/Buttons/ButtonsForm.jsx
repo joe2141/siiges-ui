@@ -15,6 +15,7 @@ export default function UserForm({
     <Grid container justifyContent="flex-end" spacing={2}>
       <Grid item>
         <ButtonUnstyled className="buttonAdd cancel" onClick={cancel}>
+<<<<<<< HEAD
           <Typography variant="body1">Cancelar</Typography>
         </ButtonUnstyled>
       </Grid>
