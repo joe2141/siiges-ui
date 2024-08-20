@@ -107,6 +107,7 @@ function SolicitudesActions({ id, estatus }) {
       </Grid>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
       <DefaultModal title="Eliminar solicitud" open={openDelete} setOpen={setOpenDelete}>
         <Typography>
           ¿Está seguro que quiere eliminar esta solicitud?
@@ -142,6 +143,8 @@ function SolicitudesActions({ id, estatus }) {
 >>>>>>> fcbda9d (se areglo boton obsevaciones)
 =======
 >>>>>>> fcbda9d (se areglo boton obsevaciones)
+=======
+>>>>>>> 12aadf36ee04c5b43ffb5080397456440b095ed6
     </>
   );
 }
